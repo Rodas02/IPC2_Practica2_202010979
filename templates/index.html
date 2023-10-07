@@ -2,15 +2,15 @@
 <html>
 <head>
     <title>Mi Curriculum</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="icono.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> 
+    <link rel="icon" href="{{ url_for('static', filename='icono.ico') }}" type="image/x-icon">
 </head>
 <body>
     <div class="container">
         <h1>Curriculum Vitae</h1>
         <!-- Datos Personales -->
         <div class="photo">
-            <img src="fotoprof.jpg" alt="Tu Foto">
+            <img src="{{ url_for('static', filename='fotoprof.jpg') }}" alt="Tu Foto"> 
         </div>
         <div class="personal-info"> 
             <p>Nombre: Teresa Celeste Rodas Castillo</p>
